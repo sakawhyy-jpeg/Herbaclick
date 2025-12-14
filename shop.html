@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toko Herbal - HerbaClick</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ===== CSS TETAP SAMA PERSIS ===== */
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(135deg,#e8f5e9 0%,#f1fff7 50%,#d4f4dd 100%);
+  background-attachment:fixed;
+  overflow-x:hidden
+}
+header{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:20px 8%;
+  background:rgba(255,255,255,.95);
+  backdrop-filter:blur(10px);
+  box-shadow:0 4px 20px rgba(0,0,0,.08);
+  position:sticky;top:0;z-index:1000;
+  animation:slideDown .6s ease
+}
+@keyframes slideDown{from{transform:translateY(-100%);opacity:0}to{transform:translateY(0);opacity:1}}
+.logo-area{display:flex;align-items:center;gap:12px}
+.logo-area img{width:45px;height:45px;transition:.3s}
+.logo-area img:hover{transform:rotate(360deg) scale(1.1)}
+.logo-area h2{
+  font-size:26px;font-weight:800;
+  background:linear-gradient(135deg,#2c7a7b,#38a169);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent
+}
+nav{display:flex;gap:25px}
+nav a{
+  color:#2c7a7b;text-decoration:none;font-weight:600;
+  padding:8px 16px;border-radius:8px;transition:.3s
+}
+nav a:hover{background:#e6fffa;transform:translateY(-2px)}
+
+.banner{
+  text-align:center;padding:80px 8% 60px;
+  background:linear-gradient(135deg,#38a169,#2c7a7b);
+  color:#fff;position:relative;overflow:hidden
+}
+.banner h3{font-size:38px;font-weight:800}
+.banner p{font-size:18px;margin-top:10px}
+.promo-badge{
+  display:inline-block;margin-top:20px;
+  background:#fbbf24;color:#92400e;
+  padding:8px 20px;border-radius:50px;font-weight:700
+}
+
+.section-header{text-align:center;padding:50px 8% 30px}
+.section-header h3{font-size:32px;color:#2c7a7b}
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:35px;padding:0 8% 80px
+}
+.product{
+  background:#fff;border-radius:20px;
+  box-shadow:0 5px 20px rgba(0,0,0,.06);
+  transition:.4s;text-align:center
+}
+.product:hover{transform:translateY(-10px)}
+.product-image{height:220px;overflow:hidden}
+.product img{width:100%;height:100%;object-fit:cover}
+.product-badge{
+  position:absolute;top:15px;right:15px;
+  background:#ef4444;color:#fff;
+  padding:6px 14px;border-radius:50px;font-size:12px
+}
+.product-content{padding:25px}
+.product h4{color:#2c7a7b;font-size:22px}
+.price{font-size:24px;color:#38a169;font-weight:800}
+.btn{
+  display:inline-block;margin-top:15px;
+  background:linear-gradient(135deg,#2b6cb0,#2c7a7b);
+  color:#fff;padding:12px 28px;
+  border-radius:50px;text-decoration:none;font-weight:700
+}
+footer{
+  text-align:center;padding:40px 8%;
+  background:linear-gradient(135deg,#2c7a7b,#22543d);
+  color:#fff
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo-area">
+    <img src="/Users/MyBook Hype AMD/Downloads/logoherbaclick.png" alt="Logo">
+    <h2>HerbaShop</h2>
+  </div>
+  <nav>
+    <a href="home.html">🏠 Home</a>
+    <a href="chat.html">💬 Chat</a>
+    <a href="#">🛒 Keranjang (0)</a>
+  </nav>
+</header>
+
+<section class="banner">
+  <h3>✨ Minuman Herbal Alami – Sehat dari Alam ✨</h3>
+  <p>Rasakan kehangatan rempah dan manfaat alami untuk tubuhmu.</p>
+  <span class="promo-badge">🔥 Promo Spesial: Beli 2 Gratis 1!</span>
+</section>
+
+<div class="section-header">
+  <h3>Produk Unggulan Kami</h3>
+  <p>Dipilih dengan teliti untuk kesehatan Anda</p>
+</div>
+
+<div class="products">
+
+  <div class="product">
+    <div class="product-image">
+      <img src="/Users/MyBook Hype AMD/Downloads/aset herbaclick/uwuh.jpg">
+    </div>
+    <div class="product-content">
+      <h4>Wedang Uwuh</h4>
+      <span class="price">Rp 25.000</span>
+      <p>Menjaga sistem imun dan meredakan tenggorokan.</p>
+      <a href="#" class="btn">🛒 Tambah ke Keranjang</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="/Users/MyBook Hype AMD/Downloads/aset herbaclick/teh.jpg">
+    </div>
+    <div class="product-content">
+      <h4>Teh Rosella</h4>
+      <span class="price">Rp 30.000</span>
+      <p>Menurunkan tekanan darah dan metabolisme.</p>
+      <a href="#" class="btn">🛒 Tambah ke Keranjang</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="/Users/MyBook Hype AMD/Downloads/aset herbaclick/kunirasem.jpg">
+    </div>
+    <div class="product-content">
+      <h4>Jamu Kunyit Asam</h4>
+      <span class="price">Rp 28.000</span>
+      <p>Meningkatkan stamina dan kesehatan wanita.</p>
+      <a href="#" class="btn">🛒 Tambah ke Keranjang</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2025 Toko HerbaClick | Diracik dengan cinta 🌿</p>
+</footer>
+
+</body>
+</html>
